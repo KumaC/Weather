@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+    <head>
+        <meta charset='utf-8'>
+        <title>天气查询</title>
+        <link href='css/init.css' rel='stylesheet'>
+        <link href='css/header.css' rel='stylesheet'>
+        <link href='css/main.css' rel='stylesheet'>
+        <link href='css/background.css' rel='stylesheet'>
+        <link href='css/vertical.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header>
+            <nav id='query-face'>
+                <div class='container'>
+                    <select id='prov-sel'>
+                        <option class='default'>选择省份</option>
+                    </select>
+                    <div id='city-sels'>
+                        <select id='选择省份'>
+                            <option class='default'>选择城市</option>
+                        </select>
+                    </div>
+                </div>
+                <input id='query-btn' type='button' value='查询'>
+            </nav>
+            <div class='balloon'></div>
+        </header>
+        <main>
+            <div id='weather'>
+                <article id='now'>
+                    <p class='location'></p>
+                    <img src='' alt='表示天气的图标' title='表示天气的图标'>
+                    <span class='tmp'></span><span class='tmp-unit'>℃</span>
+                    <p class='cond-txt'></p>
+                    <p class='update'>更新时间：<span class='up-time'></span></p>
+                    <p class='wind-hum'>风速：<span class='wind'></span>级&nbsp;湿度：<span class='hum'></span>%</p>
+                </article>
+                <article id='days'>
+                    <section>
+                        <p class='date'></p>
+                        <p><img src='' alt='表示天气的图标' title='表示天气的图标'></p>
+                        <p class='tmp'>
+                            <span class='tmp-max'></span>
+                            <span class='tmp-min'></span>
+                        </p>
+                        <p class='cond-txt'></p>
+                    </section>
+                    <section>
+                        <p class='date'></p>
+                        <p><img src='' alt='表示天气的图标' title='表示天气的图标'></p>
+                        <p class='tmp'>
+                            <span class='tmp-max'></span>
+                            <span class='tmp-min'></span>
+                        </p>
+                        <p class='cond-txt'></p>
+                    </section>
+                    <section>
+                        <p class='date'></p>
+                        <p><img src='' alt='表示天气的图标' title='表示天气的图标'></p>
+                        <p class='tmp'>
+                            <span class='tmp-max'></span>
+                            <span class='tmp-min'></span>
+                        </p>
+                        <p class='cond-txt'></p>
+                    </section>
+                    <section>
+                        <p class='date'></p>
+                        <p><img src='' alt='表示天气的图标' title='表示天气的图标'></p>
+                        <p class='tmp'>
+                            <span class='tmp-max'></span>
+                            <span class='tmp-min'></span>
+                        </p>
+                        <p class='cond-txt'></p>
+                    </section>
+                    <section>
+                        <p class='date'></p>
+                        <p><img src='' alt='表示天气的图标' title='表示天气的图标'></p>
+                        <p class='tmp'>
+                            <span class='tmp-max'></span>
+                            <span class='tmp-min'></span>
+                        </p>
+                        <p class='cond-txt'></p>
+                    </section>
+                    <section>
+                        <p class='date'></p>
+                        <p><img src='' alt='表示天气的图标' title='表示天气的图标'></p>
+                        <p class='tmp'>
+                            <span class='tmp-max'></span>
+                            <span class='tmp-min'></span>
+                        </p>
+                        <p class='cond-txt'></p>
+                    </section>
+                    <section>
+                        <p class='date'></p>
+                        <p><img src='' alt='表示天气的图标' title='表示天气的图标'></p>
+                        <p class='tmp'>
+                            <span class='tmp-max'></span>
+                            <span class='tmp-min'></span>
+                        </p>
+                        <p class='cond-txt'></p>
+                    </section>
+                </article>
+            </div>
+            <article id='suggestions'>
+                <section data-type = 'air'>
+                    <h4>空气质量指数：</h4>
+                    <p></p>
+                </section>
+                <section data-type = 'comf'>
+                    <h4>舒适度指数：</h4>
+                    <p></p>
+                </section>
+                <section data-type = 'cw'>
+                    <h4>洗车指数：</h4>
+                    <p></p>
+                </section>
+                <section data-type = 'drsg'>
+                    <h4>穿衣指数：</h4>
+                    <p></p>
+                </section>
+                <section data-type = 'flu'>
+                    <h4>感冒指数：</h4>
+                    <p></p>
+                </section>
+                <section data-type = 'sport'>
+                    <h4>运动指数：</h4>
+                    <p></p>
+                </section>
+                <section data-type = 'trav'>
+                    <h4>旅游指数：</h4>
+                    <p></p>
+                </section>
+                <section data-type = 'uv'>
+                    <h4>紫外线指数：</h4>
+                    <p></p>
+                </section>
+            </article>
+        </main>
+        <div id='background'>
+            <div class='shade'></div>
+        </div>
+
+        <script src='js/card.js'></script>
+        <script src='js/create.js'></script>
+        <script src='js/select.js'></script>
+    </body>
+</html>
