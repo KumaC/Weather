@@ -68,6 +68,9 @@ header #query-btn{
     font-size: 25px;
     outline: none;
     background: #2F3031;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
 }
 header #query-btn:active{
     background: #3F4041;
