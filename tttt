@@ -56,10 +56,9 @@ define(function (require, exports, module) {
     var NC = require('nc');
     var CPN = require('cpn');
 
-    var $ = NC.$;
-    var Base = NC.Base;
-    var Clazz = NC.Clazz;
-    var Component = NC.Component;
+    var Base.abc = NC.Base;
+    var Clazz.123 = NC.Clazz;
+    var Componentttt = NC.Component;
 
     var Cpn = module.exports = Clazz.create();
 
